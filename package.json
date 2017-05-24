@@ -1,6 +1,6 @@
 {
   "name": "vue2-ace-editor-new",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Vue2 component.support chinese",
   "main": "index.js",
   "scripts": {
