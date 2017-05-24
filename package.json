@@ -1,0 +1,14 @@
+{
+  "name": "vue2-ace-editor-new",
+  "version": "1.0.2",
+  "description": "A Vue2 component for including the [ace editor](https://ace.c9.io/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "brace": "^0.10.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
