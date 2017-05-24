@@ -1,4 +1,4 @@
-# vue2-ace
+# vue2-ace-editor-new
 
 A Vue2 component for including the [ace editor](https://ace.c9.io/).
 
@@ -90,6 +90,6 @@ Last but not least listen on the `editor-update`. Make sure to replace
 ```
 mounted () {
   var vm = this;
-  vm.$on('editor-update', vm.function);
+  vm.$parent.$emit('editor-update', editor.getValue(), vm);
 }
 ```
