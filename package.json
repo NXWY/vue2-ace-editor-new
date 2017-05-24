@@ -1,7 +1,7 @@
 {
   "name": "vue2-ace-editor-new",
   "version": "1.0.3",
-  "description": "A Vue2 component for including the [ace editor](https://ace.c9.io/).",
+  "description": "A Vue2 component.support chinese",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

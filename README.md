@@ -5,7 +5,7 @@ A Vue2 component for including the [ace editor](https://ace.c9.io/).
 ### Installation
 
 ```
-npm install --save vue2-ace
+npm install --save vue2-ace-editor-new
 ```
 
 ### How to use
@@ -13,7 +13,7 @@ npm install --save vue2-ace
 Import the component, the mode and the theme in `<script>`.
 
 ```
-import editor from 'vue2-ace'
+import editor from 'vue2-ace-editor-new'
 import 'brace/mode/javascript'
 import 'brace/theme/chrome'
 ```
