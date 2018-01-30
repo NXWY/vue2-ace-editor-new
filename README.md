@@ -30,7 +30,7 @@ Use the component in your `template`. Make sure to change `variable` to a string
 the editor should start with (it can be an empty string too).
 
 ```
-<editor :content="variable"></editor>
+<editor @editor-update="youLisenFunction" :content="variable"></editor>
 ```
 
 
@@ -49,17 +49,17 @@ If you want to change any of these defaults, just include them when you use the
 component in the template.
 
 ```
-<editor :content="variable" :height="'500px'"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :height="'500px'"></editor>
 
-<editor :content="variable" :width="'50%'"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :width="'50%'"></editor>
 
-<editor :content="variable" :lang="'html'"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :lang="'html'"></editor>
 
-<editor :content="variable" :theme="'github'"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :theme="'github'"></editor>
 
-<editor :content="variable" :sync="true"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :sync="true"></editor>
 
-<editor :content="variable" :options="options"></editor>
+<editor @editor-update="youLisenFunction" :content="variable" :options="options"></editor>
 ```
 
 The theme can be changed after the component already has been mounted. Just
@@ -90,6 +90,6 @@ Last but not least listen on the `editor-update`. Make sure to replace
 ```
 mounted () {
   var vm = this;
-  vm.$parent.$emit('editor-update', editor.getValue(), vm);
+  vm.$emit('editor-update', editor.getValue(), vm);
 }
 ```

@@ -56,7 +56,7 @@ module.exports = {
 
         // bug 修复
         try {
-            vm.$parent.$emit('editor-update', editor.getValue(), vm);
+            vm.$emit('editor-update', editor.getValue(), vm);
         }catch(e) {
 
         }
